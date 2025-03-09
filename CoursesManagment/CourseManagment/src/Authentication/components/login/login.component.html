@@ -1,0 +1,13 @@
+<div class="login-container">
+
+  <h2>Login</h2>
+
+  <button mat-raised-button color="accent" (click)="openSignInDialog()">Sign In</button>
+  <button mat-raised-button color="accent" (click)="openSignUpDialog()">Sign Up</button>
+</div>
+@if(isSignIn){
+  <app-sign-in-dialog></app-sign-in-dialog>
+}
+@if(isSignUp){
+  <app-sign-up-dialog></app-sign-up-dialog>
+}

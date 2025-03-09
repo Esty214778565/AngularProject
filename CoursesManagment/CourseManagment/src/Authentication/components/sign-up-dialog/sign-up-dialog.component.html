@@ -1,0 +1,18 @@
+<h2>Sign Up</h2>
+<form action="" (submit)="signUp()">
+    <label>Name</label>
+    <input [(ngModel)]="user.name"[ngModelOptions]="{standalone: true}" type="text" required>
+
+    <label>Email</label>
+    <input [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" type="email" required>
+
+    <label>Password</label>
+    <input [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" type="password" required>
+
+    <input [(ngModel)]="role" [ngModelOptions]="{standalone: true}" type="checkbox" (change)="onChange()" required>
+    Are you a teacher
+    <button mat-button type="submit">Sign Up</button>
+    <button mat-button (click)="close()">Cancel</button>
+</form>
+
+

@@ -1,0 +1,45 @@
+<!-- <div class="register-modal">
+    <div class="register-modal-content">
+        <form [formGroup]="lessonForm" (submit)="onSubmit()">
+            <mat-form-field class="short" appearance="fill">
+                <mat-label>Title</mat-label>
+                <input matInput formControlName="title" placeholder="Title" aria-label="lesson Title">
+            </mat-form-field>
+            <mat-form-field class="short" appearance="fill">
+                <mat-label>Content</mat-label>
+                <input matInput formControlName="content" placeholder="Content" aria-label="lesson Content">
+            </mat-form-field>
+            <div>
+                <button mat-raised-button color="accent" type="submit">Send</button>
+                <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+            </div>
+        </form>
+    </div>
+</div> -->
+<div class="register-modal">
+    <div class="register-modal-content">
+        <h2 class="modal-title">
+             Register Lesson
+        </h2>
+        <form [formGroup]="lessonForm" (submit)="onSubmit()">
+            <mat-form-field class="short" appearance="fill">
+                <mat-label>Title</mat-label>
+                <mat-icon matPrefix>title</mat-icon>
+                <input matInput formControlName="title" placeholder="Title" aria-label="lesson Title">
+            </mat-form-field>
+            <mat-form-field class="short" appearance="fill">
+                <mat-label>Content</mat-label>
+                <mat-icon matPrefix>description</mat-icon>
+                <input matInput formControlName="content" placeholder="Content" aria-label="lesson Content">
+            </mat-form-field>
+            <div class="button-group">
+                <button mat-raised-button color="primary" type="submit">
+                     Send
+                </button>
+                <button mat-raised-button color="warn" (click)="closeModal()">
+                    Close
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

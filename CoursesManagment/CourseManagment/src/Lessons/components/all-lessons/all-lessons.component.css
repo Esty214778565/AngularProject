@@ -1,0 +1,44 @@
+.course-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px; /* Further reduced padding */
+}
+
+mat-grid-list {
+  width: 100%;
+  max-width: 600px; /* Further reduced max-width for a smaller display */
+}
+
+mat-card {
+  width: 100%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Further reduced shadow */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 5px; /* Further reduced margin for spacing between cards */
+}
+
+mat-card:hover {
+  transform: scale(1.03); /* Further reduced scale effect */
+}
+
+mat-card-title {
+  font-size: 0.9rem; /* Further reduced font size */
+  font-weight: bold;
+  color: #3f51b5;
+}
+
+mat-card-content p {
+  font-size: 0.8rem; /* Further reduced font size for content */
+  color: #555;
+}
+
+.mat-button {
+  margin: 3px; /* Further reduced margin */
+  background-color: black !important;
+  color: white !important;
+  font-size: 0.8rem; /* Further reduced button font size */
+}
+
+button.mat-button {
+  font-weight: bold;
+}

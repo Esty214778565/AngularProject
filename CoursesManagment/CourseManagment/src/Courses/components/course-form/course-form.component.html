@@ -1,0 +1,50 @@
+<!-- <div class="register-modal">
+    <div class="register-modal-content">
+        <h2>Register</h2>
+        <form [formGroup]="courseForm" (submit)="onSubmit()">
+            <mat-form-field appearance="fill">
+                <mat-label>Title</mat-label>
+                <input matInput formControlName="title" placeholder="Title" aria-label="Course Title">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Description</mat-label>
+                <input matInput formControlName="description" placeholder="Description" aria-label="Course Description">
+            </mat-form-field>
+
+            <div>
+                <button mat-raised-button color="accent" type="submit">Send</button>
+                <button mat-raised-button color="warn" (click)="closeModal()">Close</button>
+            </div>
+        </form>
+    </div>
+</div> -->
+<div class="register-modal">
+    <div class="register-modal-content">
+        <h2>
+           Register
+        </h2>
+        <form [formGroup]="courseForm" (submit)="onSubmit()">
+            <mat-form-field appearance="fill">
+                <mat-label>
+                    Title
+                </mat-label>
+                <input matInput formControlName="title" placeholder="Course Title" aria-label="Course Title">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>
+                     Description
+                </mat-label>
+                <input matInput formControlName="description" placeholder="Course Description" aria-label="Course Description">
+            </mat-form-field>
+
+            <div class="button-group">
+                <button mat-raised-button color="accent" type="submit">
+                     Send
+                </button>
+                <button mat-raised-button color="warn" (click)="closeModal()">
+                     Close
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
